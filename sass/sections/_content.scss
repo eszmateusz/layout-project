@@ -1,0 +1,155 @@
+@import 'top-bar';
+
+.content {
+  display: grid;
+  font-family: $paragraph-font;
+  height: 90vh;
+  width: 97%;
+  margin: 30px 2% 0 1.3%;
+  grid-template-rows: 1fr 11fr;
+  grid-template-areas: 
+  "general-statistic "
+  "links";
+  grid-gap: 1fr;
+}
+
+.general-statistic {
+  grid-area: general-statistic;
+  width: 100%;
+  margin-top: 0;
+  display: inline-block;
+  font-size: 16px;
+
+  p {
+    padding-top: 14px;
+  }
+
+  .title-general-statistic {
+    background-color: white;
+    height: 46px;
+    width: 100%;
+    margin-bottom: 1px;
+
+    p {
+      margin-top: 0;
+      left: 10px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.date {
+  width: 100%;
+  height: 108px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+
+  .date-picker {
+    width: 31%;
+    height: 42px;
+    margin: 0;
+    padding: 32px 0 0 32.8%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .border-pickers {
+      width: 100%;
+      height: 39px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px lightgray solid;
+
+      .first-input, .second-input {
+        width: 42%;
+        height: 38px;
+        border: none;
+        margin-right: 3.5%;
+
+        input {
+          height: 100%;
+          width: 100%;
+          border: none;
+        }
+      }
+
+      .icon-calendar {
+        width: 4%;
+        height: 12px;
+        margin-top: 8px;
+      }
+
+      .line {
+        content: none;
+        width: 0.7%;
+        height: 30px;
+        border-left: 1px solid lightgray;
+        margin: 4px 0.6%;
+      }
+    }
+  }
+
+  .refresh-button {
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    margin: 31px 0 0 1.2%;
+    border-radius: 3px;
+
+    img {
+      height: 20px;
+      width: 20px;
+      margin: 10px 0 0 10px;
+      filter: invert(100%);
+    }
+  }
+}
+
+.chart {
+  margin-top: 1px;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: inline-block;
+
+  .table {
+    width: 82%;
+    padding-left: 18%;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .name-cell {
+      height: 24px;
+      width: 315px;
+      font-size: 18px;
+      margin:0 60px 18px 0;
+      border-bottom: 1px grey solid;
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        width: 50%;
+        text-align: left;
+      }
+
+      .value-cell {
+        height: 20px;
+        width: 50%;
+        text-align: right ;
+      }     
+    }
+  }
+}
+
+.link-row {
+  grid-area: links;
+
+  .links-title {
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+  }
+}

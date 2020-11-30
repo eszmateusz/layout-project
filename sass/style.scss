@@ -1,14 +1,12 @@
-@import 'variables';
-@import 'mixins';
-
-@import 'normalize';
+/* Layout */
 @import 'layout';
-
-/* Components */
-//@import 'components/form_field';
+@import 'variables';
 
 /* Sections */
-//@import 'section/registration_form';
+@import 'mixins';
+@import 'sections/sidebar';
+@import 'sections/top-bar';
+@import 'sections/content';
 
-/* Pages / Views */
-//@import 'pages/registration';
+/* Components */
+@import 'components/burger-menu';

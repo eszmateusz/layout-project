@@ -7,9 +7,105 @@
   <title>Layout project</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
+<body>
+  <section class="container">
+
+    <nav class="sidebar">
+      <div class="burger-menu">
+        <div class="text">Just do it</div>
+        <div class="button">
+          <div class="hamb-menu">
+            <span class="hamb-box">
+              <span class="box-line"></span>
+            </span> 
+          </div>
+        </div>
+      </div>
+      <div class="list-menu">
+        <ul>
+          <li><a href="general.html"><img src="images/icons/general.svg">General</a></li>
+          <li><a href="details.html"><img src="images/icons/details.svg">Details</a></li>
+          <li><a href="links.html"><img src="images/icons/links.svg">Links</a></li>
+          <li><a href="banners.html"><img src="images/icons/banners.svg">Banners</a></li>
+          <li><a href="personal_data.html"><img src="images/icons/personaldata.svg">Personal data</a></li>
+          <li><a href="payout.html"><img src="images/icons/payout.svg">Payout</a></li>
+          <li><a href="postback.html"><img src="images/icons/postback.svg">Postback</a></li>
+        </ul>
+      </div>
+      <div class="under-menu">
+        <p>YOUR MANAGER</p>
+        <div class="listMenagers">
+          <img src="images/manager.jpg"> <span class="nameManager">Andy G.</span>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="top-bar">
+      <div class="blank-col"></div>
+      <div class="cash">
+        <img src="images/icons/wallet.svg">
+        <span class="wallet-value">$1,500.00</span>
+        <img src="images/icons/arrow-down.svg" class="image-menu-wallet">
+      </div>
+      <div class="notification">
+        <img src="images/icons/notification.svg">
+      </div>
+      <div class="profile">
+        <img src="images/icons/profile.svg">
+        <span class="user-name">Leonardo Da Vinci</span>
+      </div>
+      <div class="logout">
+        <img src="images/icons/quit.svg">
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="general-statistic">
+        <div class="title-general-statistic">
+          <p>GENERAL STATISTIC</p>
+        </div>
+        <div class="date">
+          <div class="date-picker">
+            <div class="border-pickers">
+              <div class="first-input">
+                <input type="date" id="from-date" name="">
+              </div>
+              <div class="line"></div>
+              <div class="second-input">
+                <input type="date" id="to-date" name="">
+              </div>
+              <div class="icon-calendar">
+                <img src="images/icons/calendar.svg">
+              </div>
+            </div>
+          </div>
+          <div class="refresh-button"><img src="images/icons/refresh.svg"></div>
+        </div>
+        <div class="chart">
+          <div class="table">
+            <div class="name-cell"><span>Visit Signups</span><div class="value-cell"><span>124</span></div></div>
+            <div class="name-cell"><span>Net deposit</span><div class="value-cell"><span>564</span></div></div>
+            <div class="name-cell"><span>FTD</span><div class="value-cell"><span>445</span></div></div>
+            <div class="name-cell"><span>Turn over</span><div class="value-cell"><span>432</span></div></div>
+          </div>
+          <span>Earnings chart</span>
+          <div class="chart-images">
+            <img src="images/chart-general-statistic.png">
+          </div>
+        </div>
+      </div>
+      <div class="link-row">
+        <div class="links-title"></div>
+        <div class="links"></div>
+      </div>
+    </div>
+
+  </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="js/script.js"></script>
-<body>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+</html>
