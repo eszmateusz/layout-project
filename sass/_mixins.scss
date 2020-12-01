@@ -1,6 +1,6 @@
 @mixin box-line {
   width: 100%;
   height: 3px;
-  background-color: yellowgreen;
+  background-color: $dark-gray;
   position: absolute;
 } 

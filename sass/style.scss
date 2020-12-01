@@ -1,12 +1,13 @@
 /* Layout */
-@import 'layout';
 @import 'variables';
+@import 'layout';
 
 /* Sections */
 @import 'mixins';
 @import 'sections/sidebar';
 @import 'sections/top-bar';
 @import 'sections/content';
+@import 'media'; 
 
 /* Components */
 @import 'components/burger-menu';

@@ -2,19 +2,15 @@
 
 .content {
   display: grid;
-  font-family: $paragraph-font;
+  font-family: $brand-font;
+  color: $text;
   height: 90vh;
   width: 97%;
-  margin: 30px 2% 0 1.3%;
-  grid-template-rows: 1fr 11fr;
-  grid-template-areas: 
-  "general-statistic "
-  "links";
+  margin: 30px 2% 0 1%;
   grid-gap: 1fr;
 }
 
 .general-statistic {
-  grid-area: general-statistic;
   width: 100%;
   margin-top: 0;
   display: inline-block;
@@ -58,7 +54,11 @@
       height: 39px;
       display: flex;
       flex-wrap: wrap;
-      border: 1px lightgray solid;
+      border: 1px $light-gray solid;
+
+      &:hover {
+        border-color: $dark-gray;
+      }
 
       .first-input, .second-input {
         width: 42%;
@@ -95,6 +95,7 @@
     width: 40px;
     margin: 31px 0 0 1.2%;
     border-radius: 3px;
+    cursor: pointer;
 
     img {
       height: 20px;
@@ -108,7 +109,7 @@
 .chart {
   margin-top: 1px;
   width: 100%;
-  height: 400px;
+  height: 640px;
   background-color: white;
   display: inline-block;
 
@@ -136,20 +137,150 @@
       .value-cell {
         height: 20px;
         width: 50%;
-        text-align: right ;
+        text-align: right;
       }     
     }
+  }
+  
+  .title-charts {
+    width: 30%;
+    height: 30px;
+    margin: 40px 0 0 17.7%;
+  }
+
+  .chart-images {
+    margin: 28px 0 0 18%;
   }
 }
 
 .link-row {
   grid-area: links;
+  margin-top: 20px;
 
   .links-title {
     width: 100%;
+    height: 50px;
+  
+    p {
+      transform: translateY(-40%);
+      padding-left: 20px;   
+    }
   }
 
   .links {
     width: 100%;
+  }
+}
+
+.link-row {
+  height: 600px;
+
+  .links-title {
+    width: 100%;
+    margin-top: 0;
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+
+    p {
+      padding-top: 14px;
+    }
+  }
+}
+
+.links {
+  background-color: white;
+  width: 100%;
+  height: 800px;
+
+  button {
+    width: 11.9%;
+    height: 40px;
+    margin: 20px 0 0 44%;
+    border: none;
+    border-radius: 4px;
+    background-color: $orange;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    p {
+      margin: 0;
+      padding: 2px 0 0 0;
+      color: white;
+      font-size: 17px;
+    }
+  }
+
+  .links-list {
+    width: 80%;
+    height: 250px;
+    margin-top: 23px;
+
+    li {
+      width: 85%;
+      height: 57px;
+      margin-left: 18%;
+      border-top: 1px lightgray solid;
+      display: grid;
+      grid-template-columns: 2fr 3fr 1fr ;
+      grid-template-areas:
+      "name-link link icon-link";
+
+      .name-position {
+        grid-area: name-link;
+        padding: 16px 0 0 15px;
+        color: $dark-gray;
+      }
+
+      .link-position {
+        grid-area: link;
+        padding: 17px 0 0 26%;
+
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          color: $dark-gray;
+          font-family: $brand-font;
+        }
+      }
+
+      .icon-position {
+        grid-area: icon-link;
+        width: 91px;
+        padding: 22px 0 0 17%;
+
+        img {
+          visibility: hidden;
+          width: 16px;
+          height: 16px;
+          float: left;
+          padding-left: 19px;
+        }
+      }
+
+      &:hover {
+          background-color: $light-gray;
+
+          .icon-position img {
+            visibility: visible;
+          }
+
+          .orange-icon {
+            fill: $orange;
+        }
+      }
+    }
+
+    .last-line {
+      border-bottom: 1px lightgray solid;
+    }
+
+    .second-button {
+      width: 15%;
+      margin: 9px 0 0 53%;
+    }
   }
 }

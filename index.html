@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Layout project</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
@@ -14,30 +13,32 @@
   <section class="container">
 
     <nav class="sidebar">
-      <div class="burger-menu">
-        <div class="text">Just do it</div>
-        <div class="button">
-          <div class="hamb-menu">
-            <span class="hamb-box">
-              <span class="box-line"></span>
-            </span> 
+      <div class="container-sidebar">
+        <div class="burger-menu">
+          <div class="text"><img src="images/dashboard-logo.png"></div>
+          <div class="button">
+            <div class="hamb-menu">
+              <span class="hamb-box">
+                <span class="box-line"></span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
       <div class="list-menu">
         <ul>
-          <li><a href="general.html"><img src="images/icons/general.svg">General</a></li>
-          <li><a href="details.html"><img src="images/icons/details.svg">Details</a></li>
-          <li><a href="links.html"><img src="images/icons/links.svg">Links</a></li>
-          <li><a href="banners.html"><img src="images/icons/banners.svg">Banners</a></li>
-          <li><a href="personal_data.html"><img src="images/icons/personaldata.svg">Personal data</a></li>
-          <li><a href="payout.html"><img src="images/icons/payout.svg">Payout</a></li>
-          <li><a href="postback.html"><img src="images/icons/postback.svg">Postback</a></li>
+          <li><a href="general.html"><img src="images/icons/general.svg"><span>General</span></a></li>
+          <li><a href="details.html"><img src="images/icons/details.svg"><span>Details</span></a></li>
+          <li><a href="links.html"><img src="images/icons/links.svg"><span>Links</span></a></li>
+          <li><a href="banners.html"><img src="images/icons/banners.svg"><span>Banners</span></a></li>
+          <li><a href="personal_data.html"><img src="images/icons/personaldata.svg"><spa>Personal data</spa></a></li>
+          <li><a href="payout.html"><img src="images/icons/payout.svg"><span>Payout</span></a></li>
+          <li><a href="postback.html"><img src="images/icons/postback.svg"><span>Postback</span></a></li>
         </ul>
       </div>
       <div class="under-menu">
         <p>YOUR MANAGER</p>
-        <div class="listMenagers">
+        <div class="listManager">
           <img src="images/manager.jpg"> <span class="nameManager">Andy G.</span>
         </div>
       </div>
@@ -91,16 +92,105 @@
             <div class="name-cell"><span>FTD</span><div class="value-cell"><span>445</span></div></div>
             <div class="name-cell"><span>Turn over</span><div class="value-cell"><span>432</span></div></div>
           </div>
-          <span>Earnings chart</span>
+          <p class="title-charts">Earnings chart</p>
           <div class="chart-images">
             <img src="images/chart-general-statistic.png">
           </div>
         </div>
       </div>
       <div class="link-row">
-        <div class="links-title"></div>
-        <div class="links"></div>
+        <div class="links-title">
+          <p>LINKS</p>
+        </div>
+        <div class="links">
+          <button class="first-button"><p>+ add new</p></button>                    
+          <div class="links-list">
+          <ul>
+            <li>
+              <div class="name-position">Home page</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.homepage.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Currently offer</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.currentlyoffer.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Blurpix</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.blurpix.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Your Site</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.yoursite.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Google</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.google.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Facebook</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.facebook.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Dashboard</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.dashboard.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Blurax</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.blurax.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Piece of Wine</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.pieceofwine.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+            <li>
+              <div class="name-position">Twitter</div>
+              <div class="link-position"><a href="www.homepage.com">htpp://www.twitter.com</a></div>
+              <div class="icon-position">
+                <img src="images/icons/link-orange.svg" class="orange-icon">
+                <img src="images/icons/trash.svg">
+              </div>
+            </li>
+          </ul>
+          <button class="second-button"><p>+ add new</p></button>
+        </div>
       </div>
+    </div>
     </div>
 
   </section>

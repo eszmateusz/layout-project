@@ -1,22 +1,21 @@
 .button {
-  width: 25px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
   display: inline-block;
   position: relative;
-  left: 15px;
+  left: 38px;
+  top: 8px;
 
   .hamb-menu {
-    padding: 10px;
     display: inline-block;
     cursor: pointer;
     background-color: transparent;
-    padding: 0;
     margin: 0;
 
     .hamb-box {
-      width: 25px;
-      height: 15px;
+      width: 18px;
+      height: 18px;
       display: inline-block;
       position: relative; 
 
@@ -28,20 +27,20 @@
         transition: background-color .2s .3s ease-in-out;
       }
 
-      .box-line::before,
+      .box-line::before
       .box-line::after {
         @include box-line;
         content: '';
       }
 
       .box-line::before {
-        top: -10px;
+        top: -6px;
         left: 0;
         transition: transform .2s .2s ease-in-out;
       }
 
       .box-line::after {
-        top: 10px;
+        top: 6px;
         left: 0;
         transition: transform .3s .3s ease-in-out;
       }
@@ -51,11 +50,11 @@
       }
 
       .box-line.active::before {
-        transform: translateY(10px) rotate(125deg);
+        transform: translateY(6px) rotate(125deg);
       }
 
       .box-line.active::after {
-        transform: translateY(-10px) rotate(-125deg);
+        transform: translateY(-6px) rotate(-125deg);
       }
     }
   } 
