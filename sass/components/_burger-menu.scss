@@ -4,8 +4,8 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
-  left: 38px;
-  top: 8px;
+  left: 20px;
+  top: 12px;
 
   .hamb-menu {
     display: inline-block;
@@ -17,7 +17,7 @@
       width: 18px;
       height: 18px;
       display: inline-block;
-      position: relative; 
+      position: relative;
 
       .box-line {
         @include box-line;
@@ -27,7 +27,7 @@
         transition: background-color .2s .3s ease-in-out;
       }
 
-      .box-line::before
+      .box-line::before,
       .box-line::after {
         @include box-line;
         content: '';
@@ -37,7 +37,7 @@
         top: -6px;
         left: 0;
         transition: transform .2s .2s ease-in-out;
-      }
+      } 
 
       .box-line::after {
         top: 6px;

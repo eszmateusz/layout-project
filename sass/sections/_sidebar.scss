@@ -1,11 +1,11 @@
 @import '../components/burger-menu';
 
 /* Global */
-
 .sidebar {
   width: 190px;
   height: 100vh;
   background-color: $paragraph-color;
+  z-index: 2;
 
   .container-sidebar {
     height: 100%;
@@ -54,16 +54,20 @@
           }
 
           img {
-            margin: 5px 0 0 10px;
-            height: 12px;
+            margin: 11px 0 0 10px;
+            height: 13px;
             width: 27px;
             filter: invert(70%);
             float: left;
           }
-          
-          span {
-            padding: 0 0 0 8px;
-            height: 30px;
+
+          .link-title-sidemenu {
+            padding-top: 9px;
+
+            span {
+              padding: 0 0 0 8px;
+              height: 30px;
+            }
           }
         }
 
@@ -78,40 +82,48 @@
       }
     }
   }
-}
 
-/* ManagerList */
+  /* ManagerList */
 
-.under-menu {
-  color: white;
-  display: inline-block;
-  text-align: center;
-  font-size: 13px;
-  margin-left: 11%;
+  .under-menu {
+    color: white;
+    text-align: left;
 
-  p {
-    margin: 10px 0;
-  }
+    a {
+      text-decoration: none;
+    }
+    
+    p {
+      font-size: 15px;
+      margin: 20px;
+    }
 
-  .nameManager {
-    font-size: 14px;
-    color: $link;
-  }
+    .listManagers {
+      display: flex;
+      margin: 0 20px;
 
-  .listManager {
-    width: 100%;
-    margin: 11px 0 0 19%;
-    display: inline-block;
+      .nameManager {
+        display: block;
+        font-size: 15px;
+        color: white;
+        margin: 10px 0 0 0;
+      }
 
-    img {
-      filter: invert(85%);
-      height: 20px;
-      margin-right: 10px;
-      display: inline-block;
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+        display: inline-block;
+        border-radius: 45%;
+      }
+    }
+
+    .listManagers:hover {
+      background: #3b3a3a;
     }
   }
-}
 
-.hidden {
-  display: none;
+  .hidden {
+    display: none;
+  }
 }

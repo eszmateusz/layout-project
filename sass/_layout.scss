@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: $light-gray;
   font-family: $brand-font;
 }
 
-/* General grid */
+/* Grid general */
 
 .container {
   display: grid;
@@ -15,14 +15,12 @@ body {
   grid-template-areas:
   "sidebar top-bar"
   "sidebar content";
-  grid-gap: 10px;
-  border: 1px black solid;
 }
 
 .sidebar {
   margin: 0;
   width: 190px;
-  grid-area: sidebar; 
+  grid-area: sidebar;
 }
 
 .top-bar {
@@ -32,19 +30,4 @@ body {
 
 .content {
   grid-area: content;
-}
-
-/* */
-
-.general-stat {
-  grid-area: general-stat;
-  border: 1px black solid;
-  margin-right: 10px;
-}
-
-.general-links {
-  grid-area: general-links;
-  border: 1px black solid;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
