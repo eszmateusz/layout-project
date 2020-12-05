@@ -3,106 +3,109 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  display: grid;
-  background: $dark-gray;
+  display: flex;
+  background: white;
   color: $top-bar-text;
-  grid-template-columns: 70% 15fr 4fr 13fr 5fr;
-  grid-template-areas:
-  "blank cash notification profile logout";
   position: fixed;
   z-index: 1;
+  justify-content: flex-end;
 }
 
 .blank-col {
   height: 60px;
+  width: 75%;
   background-color: white;   
-  grid-area: blank;
   cursor: pointer;
-  float: left;
 }
 
 .cash {
   height: 60px;
+  width: 190px;
   background-color: white;
-  grid-area: cash;
   margin: 0 1px 0 1px;
   cursor: pointer;
+  position: relative;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
 
   img {
-    padding: 19px 0 0 10%;
-    height: 18px;
+    padding: 20px 0 0 10%;
+    height: 20px;
     float: left;
+    position: absolute;
   }
 
   .wallet-value {
-    margin: 18px 10px 0 16px;
+    margin: 18px 0 0 47px;
     font-size: 18px;
     float: left;
     color: $medium-gray;
+    position: absolute;
   }
 
   .image-menu-wallet {
-    height: 8px;
+    margin: 0 0 0 130px;
+    height: 10px;
     padding: 28px 0 0 12px;
+    position: absolute;
   }
 }
 
 .notification {
   height: 60px;
+  width: 70px;
   background-color: white;
-  float: left;
-  grid-area: notification;
   cursor: pointer;
   position: relative;
 
   img {
-    width: 100%;
-    height: 20px;
-    padding: 20px 0 0 0;
+    width: 50%;
+    height: 21px;
+    padding: 22px 10px 0 15px;
   }
 
-  .availabilityIcon {
+  .availability-icon {
     background-color: orange;
     height: 8px;
     width: 8px;
     border-radius: 45%;
     position: absolute;
-    top: 15px;
-    right: 18px;
-    margin: 2px;
+    margin: -27px 0 0 32px;
   }
 }
 
 .profile {
   height: 60px;
+  width: 200px;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
   background-color: white;
-  margin: 0 1px 0 1px;
-  grid-area: profile;
   cursor: pointer;
 
   img {
-    height: 16px;
-    padding: 22px 0 0 7%;
+    height: 21px;
+    padding: 21px 0 0 15px;
     float: left;
   }
 
   .user-name {
     margin: 22px 0 0 5%;
-    font-size: 13px;
+    font-size: 14px;
     float: left;
     color: $user-name-color;
   }
 }
 
 .logout {
-  float: left;
+  width: 70px;
   background-color: white;
-  grid-area: logout;
+  justify-content: flex-end;
+  border-right: .5px solid black;
   cursor: pointer;
 
   img {
-    height: 14px;
-    padding: 22px 0 0 20px;
+    height: 16px;
+    padding: 22px 0 0 25px;
   }
 }
 

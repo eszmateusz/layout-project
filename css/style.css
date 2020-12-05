@@ -122,12 +122,12 @@ body {
   /* Menu */
 }
 
-.sidebar .container-sidebar .text {
+.sidebar .container-sidebar .logo-image {
   width: 50%;
   padding-left: 16px;
 }
 
-.sidebar .container-sidebar .text img {
+.sidebar .container-sidebar .logo-image img {
   float: left;
 }
 
@@ -202,28 +202,29 @@ body {
   margin: 20px;
 }
 
-.sidebar .under-menu .listManagers {
+.sidebar .under-menu .list-managers {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 20px;
+  margin: 0;
 }
 
-.sidebar .under-menu .listManagers .nameManager {
+.sidebar .under-menu .list-managers .name-manager {
   display: block;
   font-size: 15px;
   color: white;
-  margin: 10px 0 0 0;
+  margin: 13px 0 0 0;
 }
 
-.sidebar .under-menu .listManagers img {
+.sidebar .under-menu .list-managers img {
   height: 40px;
   width: 40px;
+  margin: 4px 0 4px 20px;
   margin-right: 20px;
   display: inline-block;
   border-radius: 45%;
 }
 
-.sidebar .under-menu .listManagers:hover {
+.sidebar .under-menu .list-managers:hover {
   background: #3b3a3a;
 }
 
@@ -236,108 +237,113 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  background: #999999;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
   color: #756969;
-  -ms-grid-columns: 70% 15fr 4fr 13fr 5fr;
-      grid-template-columns: 70% 15fr 4fr 13fr 5fr;
-  grid-template-areas: "blank cash notification profile logout";
   position: fixed;
   z-index: 1;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .blank-col {
   height: 60px;
+  width: 75%;
   background-color: white;
-  grid-area: blank;
   cursor: pointer;
-  float: left;
 }
 
 .cash {
   height: 60px;
+  width: 190px;
   background-color: white;
-  grid-area: cash;
   margin: 0 1px 0 1px;
   cursor: pointer;
+  position: relative;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
 }
 
 .cash img {
-  padding: 19px 0 0 10%;
-  height: 18px;
+  padding: 20px 0 0 10%;
+  height: 20px;
   float: left;
+  position: absolute;
 }
 
 .cash .wallet-value {
-  margin: 18px 10px 0 16px;
+  margin: 18px 0 0 47px;
   font-size: 18px;
   float: left;
   color: #9c9c9c;
+  position: absolute;
 }
 
 .cash .image-menu-wallet {
-  height: 8px;
+  margin: 0 0 0 130px;
+  height: 10px;
   padding: 28px 0 0 12px;
+  position: absolute;
 }
 
 .notification {
   height: 60px;
+  width: 70px;
   background-color: white;
-  float: left;
-  grid-area: notification;
   cursor: pointer;
   position: relative;
 }
 
 .notification img {
-  width: 100%;
-  height: 20px;
-  padding: 20px 0 0 0;
+  width: 50%;
+  height: 21px;
+  padding: 22px 10px 0 15px;
 }
 
-.notification .availabilityIcon {
+.notification .availability-icon {
   background-color: orange;
   height: 8px;
   width: 8px;
   border-radius: 45%;
   position: absolute;
-  top: 15px;
-  right: 18px;
-  margin: 2px;
+  margin: -27px 0 0 32px;
 }
 
 .profile {
   height: 60px;
+  width: 200px;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
   background-color: white;
-  margin: 0 1px 0 1px;
-  grid-area: profile;
   cursor: pointer;
 }
 
 .profile img {
-  height: 16px;
-  padding: 22px 0 0 7%;
+  height: 21px;
+  padding: 21px 0 0 15px;
   float: left;
 }
 
 .profile .user-name {
   margin: 22px 0 0 5%;
-  font-size: 13px;
+  font-size: 14px;
   float: left;
   color: #56819f;
 }
 
 .logout {
-  float: left;
+  width: 70px;
   background-color: white;
-  grid-area: logout;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  border-right: .5px solid black;
   cursor: pointer;
 }
 
 .logout img {
-  height: 14px;
-  padding: 22px 0 0 20px;
+  height: 16px;
+  padding: 22px 0 0 25px;
 }
 
 .blank-col:hover, .cash:hover, .notification:hover, .profile:hover, .logout:hover {
@@ -349,108 +355,113 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  background: #999999;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
   color: #756969;
-  -ms-grid-columns: 70% 15fr 4fr 13fr 5fr;
-      grid-template-columns: 70% 15fr 4fr 13fr 5fr;
-  grid-template-areas: "blank cash notification profile logout";
   position: fixed;
   z-index: 1;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .blank-col {
   height: 60px;
+  width: 75%;
   background-color: white;
-  grid-area: blank;
   cursor: pointer;
-  float: left;
 }
 
 .cash {
   height: 60px;
+  width: 190px;
   background-color: white;
-  grid-area: cash;
   margin: 0 1px 0 1px;
   cursor: pointer;
+  position: relative;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
 }
 
 .cash img {
-  padding: 19px 0 0 10%;
-  height: 18px;
+  padding: 20px 0 0 10%;
+  height: 20px;
   float: left;
+  position: absolute;
 }
 
 .cash .wallet-value {
-  margin: 18px 10px 0 16px;
+  margin: 18px 0 0 47px;
   font-size: 18px;
   float: left;
   color: #9c9c9c;
+  position: absolute;
 }
 
 .cash .image-menu-wallet {
-  height: 8px;
+  margin: 0 0 0 130px;
+  height: 10px;
   padding: 28px 0 0 12px;
+  position: absolute;
 }
 
 .notification {
   height: 60px;
+  width: 70px;
   background-color: white;
-  float: left;
-  grid-area: notification;
   cursor: pointer;
   position: relative;
 }
 
 .notification img {
-  width: 100%;
-  height: 20px;
-  padding: 20px 0 0 0;
+  width: 50%;
+  height: 21px;
+  padding: 22px 10px 0 15px;
 }
 
-.notification .availabilityIcon {
+.notification .availability-icon {
   background-color: orange;
   height: 8px;
   width: 8px;
   border-radius: 45%;
   position: absolute;
-  top: 15px;
-  right: 18px;
-  margin: 2px;
+  margin: -27px 0 0 32px;
 }
 
 .profile {
   height: 60px;
+  width: 200px;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
   background-color: white;
-  margin: 0 1px 0 1px;
-  grid-area: profile;
   cursor: pointer;
 }
 
 .profile img {
-  height: 16px;
-  padding: 22px 0 0 7%;
+  height: 21px;
+  padding: 21px 0 0 15px;
   float: left;
 }
 
 .profile .user-name {
   margin: 22px 0 0 5%;
-  font-size: 13px;
+  font-size: 14px;
   float: left;
   color: #56819f;
 }
 
 .logout {
-  float: left;
+  width: 70px;
   background-color: white;
-  grid-area: logout;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  border-right: .5px solid black;
   cursor: pointer;
 }
 
 .logout img {
-  height: 14px;
-  padding: 22px 0 0 20px;
+  height: 16px;
+  padding: 22px 0 0 25px;
 }
 
 .blank-col:hover, .cash:hover, .notification:hover, .profile:hover, .logout:hover {
@@ -458,11 +469,11 @@ body {
 }
 
 .content {
-  display: -ms-grid;
-  display: grid;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Open Sans", Helvetica, Arial;
   height: 90vh;
-  width: 96.8%;
+  width: 97%;
   margin: 30px 2% 0 1.4%;
   grid-gap: 1fr;
 }
@@ -486,8 +497,6 @@ body {
 }
 
 .general-statistic .title-general-statistic p {
-  margin-top: 14px;
-  left: 10px;
   padding-left: 20px;
 }
 
@@ -634,7 +643,7 @@ body {
 .link-row {
   height: 600px;
   grid-area: links;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .link-row .links-title {
@@ -655,7 +664,7 @@ body {
 .link-row .links {
   background-color: white;
   width: 100%;
-  height: 800px;
+  padding: 20px 0;
 }
 
 .link-row .links button {
@@ -673,7 +682,7 @@ body {
   opacity: 80%;
 }
 
-.link-row .links .first-button {
+.link-row .links .first-button, .link-row .links .second-button {
   margin: auto;
   color: white;
   -ms-flex-pack: center;
@@ -685,16 +694,20 @@ body {
   border: 20px;
 }
 
+.link-row .links .second-button {
+  margin-bottom: 10px;
+}
+
 .link-row .links .links-list {
-  width: 80%;
-  height: 250px;
+  width: 70%;
+  height: 650px;
   margin-top: 23px;
+  margin: auto;
 }
 
 .link-row .links .links-list li {
-  width: 85%;
+  width: 100%;
   height: 57px;
-  margin-left: 18%;
   border-top: 1px lightgray solid;
   display: -ms-grid;
   display: grid;
@@ -747,20 +760,8 @@ body {
   fill: #f58220;
 }
 
-.link-row .links .links-list .last-line {
+.link-row .links .links-list li:last-child {
   border-bottom: 1px lightgray solid;
-}
-
-.link-row .links .links-list .second-button {
-  margin-top: 20px;
-  margin-left: 53%;
-  color: white;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  font-size: 16px;
-  font-weight: 500;
 }
 
 @media (max-width: 1155px) {
