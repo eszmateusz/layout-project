@@ -33,72 +33,68 @@
 
 .date {
   width: 100%;
-  height: 108px;
+  height: 100px;
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+
+  .refresh-button {
+    background-color: orange;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+
+    img {
+      height: 15px;
+      width: 15px;
+      margin: 7px 0 0 7px;
+      filter: invert(100%);
+    }
+  }
 
   .date-picker {
-    width: 33%;
-    height: 42px;
-    margin: 0;
-    padding: 32px 0 0 32.8%;
+    height: 80px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     .border-pickers {
-      width: 100%;
+      width: 350px;
       height: 39px;
       display: flex;
       flex-wrap: wrap;
-      border: 1px $light-gray solid;
+      border: none;
 
       &:hover {
         border-color: $dark-gray;
       }
 
       .first-input, .second-input {
-        width: 42%;
+        width: 140px;
         height: 38px;
         border: none;
-        margin-right: 3.5%;
 
         input {
           height: 100%;
-          width: 100%;
           border: none;
-        }
-      }
+          cursor: pointer;
 
-      .icon-calendar {
-        width: 4%;
-        height: 80%;
-        margin-top: 8px;
+          &:hover {
+            background-color: lightblue;
+          }
+        }
       }
 
       .line {
         content: none;
-        width: 0.7%;
+        width: 1px;
         height: 30px;
         border-left: 1px solid lightgray;
         margin: 4px 0.6%;
       }
-    }
-  }
-
-  .refresh-button {
-    background-color: orange;
-    height: 40px;
-    width: 40px;
-    margin: 31px 0 0 1.2%;
-    border-radius: 3px;
-    cursor: pointer;
-
-    img {
-      height: 20px;
-      width: 20px;
-      margin: 10px 0 0 10px;
-      filter: invert(100%);
     }
   }
 }
@@ -127,6 +123,7 @@
       border-bottom: 1px grey solid;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
 
       span {
         width: 50%;
@@ -155,6 +152,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
 }
 
@@ -181,7 +179,9 @@
   .links {
     background-color: white;
     width: 100%;
+    height: 750px;
     padding: 20px 0;
+    position: relative;
 
     button {
       width: 200px;
@@ -212,68 +212,75 @@
     }
 
     .links-list {
-      width: 70%;
+      width: 100%;
       height: 650px;
       margin-top: 23px;
-      margin: auto;
+      position: absolute;
+      justify-content: center;
 
-      li {
-        width: 100%;
-        height: 57px;
-        border-top: 1px lightgray solid;
-        display: grid;
-        grid-template-columns: 2fr 3fr 1fr;
-        grid-template-areas:
-        "name-link link icon-link";
+        li {
+          width: 95%;
+          height: 57px;
+          border-top: 1px lightgray solid;
+          display: grid;
+          grid-template-columns: 2fr 3fr 1fr 1fr;
+          grid-template-areas:
+          "name-link link icon-link";
 
-        .name-position {
-          grid-area: name-link;
-          padding: 16px 0 0 15px;
-          color: $dark-gray;
-        }
-
-        .link-position {
-          grid-area: link;
-          padding: 17px 0 0 26%;
-
-          a {
-            font-size: 14px;
-            text-decoration: none;
+          .name-position {
+            grid-area: name-link;
+            padding: 16px 15px 0 15px;
             color: $dark-gray;
-            font-family: $brand-font;
+          }
+
+          .link-position {
+            grid-area: link;
+            padding: 17px 0 0 26%;
+
+            a {
+              font-size: 14px;
+              text-decoration: none;
+              color: $dark-gray;
+              font-family: $brand-font;
+            }
+          }
+
+          .icon-position {
+            grid-area: icon-link;
+            width: 100%;
+            position: relative;
+
+            img {
+              position: absolute;
+              height: 25px;
+              visibility: hidden;
+              padding-top: 6px;
+              margin-top: 10px;
+              float: right;
+            }
+
+            img:last-child {
+              padding-top: 5px;
+              margin-left: 70px;
+            }
+          }
+
+          &:hover {
+            background-color: $light-gray;
+
+            .icon-position img {
+              visibility: visible;
+            }
+
+            .orange-icon {
+              fill: $orange;
+            }
           }
         }
 
-        .icon-position {
-          grid-area: icon-link;
-          width: 91px;
-          padding: 22px 0 0 17%;
-
-          img {
-            visibility: hidden;
-            width: 16px;
-            height: 16px;
-            float: left;
-            padding-left: 19px;
-          }
+        li:last-child {
+          border-bottom: 1px lightgray solid;
         }
-
-        &:hover {
-          background-color: $light-gray;
-
-          .icon-position img {
-            visibility: visible;
-          }
-
-          .orange-icon {
-            fill: $orange;
-          }
-        }
-      }
-
-      li:last-child {
-        border-bottom: 1px lightgray solid;
-      }
     }
   }
 }

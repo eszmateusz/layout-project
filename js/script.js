@@ -4,7 +4,7 @@ function clickHamburgerButton() {
   const topBar = document.querySelector('.top-bar');
 
   const hambMenu = document.querySelector('.container .container-sidebar .burger-menu .button');
-  const textMenu = document.querySelector('.burger-menu .text');
+  //const textMenu = document.querySelector('.burger-menu .text');
   const underMenu = document.querySelector('.under-menu');
 
   const containerSidebar = document.querySelector('.container-sidebar');
@@ -24,7 +24,7 @@ function clickHamburgerButton() {
     sidebarMenu.classList.toggle('hidden');
     topBar.classList.toggle('close-menu');
     underMenu.classList.toggle('close-menu');
-    textMenu.classList.toggle('close-menu');
+    //textMenu.classList.toggle('close-menu');
     sidebar.classList.toggle('close-menu');
     containerSidebar.classList.toggle('close-menu');
     hambMenu.classList.toggle('vis-hamb');
