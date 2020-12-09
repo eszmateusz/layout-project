@@ -541,8 +541,8 @@ template {
 }
 
 .sidebar .under-menu p {
-  font-size: 13px;
-  margin: 15px;
+  font-size: 15px;
+  margin: 20px;
 }
 
 .sidebar .under-menu .list-managers {
@@ -553,7 +553,7 @@ template {
 
 .sidebar .under-menu .list-managers .name-manager {
   display: block;
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   margin: 13px 0 0 0;
 }
@@ -1286,16 +1286,6 @@ template {
     width: 55% !important;
     margin: 10% 35% !important;
   }
-  .close-menu {
-    visibility: hidden;
-    width: 40px;
-    background: none;
-  }
-  .vis-hamb {
-    visibility: visible;
-    position: absolute;
-    left: 6% !important;
-  }
   .content-max-width {
     -ms-grid-columns: 0fr 9fr;
         grid-template-columns: 0fr 9fr;
@@ -1373,24 +1363,12 @@ template {
   .container .top-bar .cash {
     height: 83px;
   }
-  .container .top-bar .cash img {
-    padding: 8px 0 0 44%;
-  }
   .container .top-bar .cash .wallet-value {
     margin: 5px 0 0 23%;
     font-size: 16px;
   }
   .container .top-bar .notification {
     height: 33px;
-  }
-  .container .top-bar .notification img {
-    padding: 0;
-  }
-  .container .top-bar .logout {
-    padding: 4px 30%;
-  }
-  .container .correct-top-bar {
-    top: 25%;
   }
   .content {
     margin-top: 0;
@@ -1487,17 +1465,12 @@ template {
     height: 50px;
   }
   .container .sidebar .container-sidebar .under-menu p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 10px 0 5px 8px;
   }
   .container .sidebar .container-sidebar .under-menu .list-managers .name-manager {
     font-size: 12px;
     margin-top: 15px;
-  }
-  .close-menu {
-    visibility: hidden;
-    background: none;
-    padding: 0;
   }
   /* Content */
   .content {
