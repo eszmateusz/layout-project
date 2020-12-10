@@ -1,10 +1,6 @@
-/* Layout */
 /* Colors */
+/* Font sizes */
 /* Fonts */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   background-color: #f5f5f2;
@@ -21,7 +17,7 @@ body {
   -ms-grid-rows: 50px 1fr 1fr;
       grid-template-rows: 50px 1fr 1fr;
   grid-column-gap: 0.2%;
-  grid-template-areas: "sidebar top-bar" "sidebar content";
+  grid-template-areas: "sidebar top-bar" "sidebar content" "sidebar content";
 }
 
 .sidebar {
@@ -39,354 +35,27 @@ body {
   grid-area: content;
 }
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
-*/
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+.general-stat {
+  grid-area: general-stat;
+  border: 1px black solid;
+  margin-right: 10px;
 }
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
+.general-links {
+  grid-area: general-links;
+  border: 1px black solid;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-/**
-* Render the `main` element consistently in IE.
-*/
-main {
-  display: block;
-}
-
-/**
-* Correct the font size and margin on `h1` elements within `section` and
-* `article` contexts in Chrome, Firefox, and Safari.
-*/
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
-* 1. Add the correct box sizing in Firefox.
-* 2. Show the overflow in Edge and IE.
-*/
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
-* 1. Correct the inheritance and scaling of font size in all browsers.
-* 2. Correct the odd `em` font sizing in all browsers.
-*/
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
-* Remove the gray background on active links in IE 10.
-*/
-a {
-  background-color: transparent;
-}
-
-/**
-* 1. Remove the bottom border in Chrome 57-
-* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-*/
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
-* Add the correct font weight in Chrome, Edge, and Safari.
-*/
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-* 1. Correct the inheritance and scaling of font size in all browsers.
-* 2. Correct the odd `em` font sizing in all browsers.
-*/
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
-* Add the correct font size in all browsers.
-*/
-small {
-  font-size: 80%;
-}
-
-/**
-* Prevent `sub` and `sup` elements from affecting the line height in
-* all browsers.
-*/
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
- ========================================================================== */
-/**
-* Remove the border on images inside links in IE 10.
-*/
-img {
-  border-style: none;
-}
-
-/* Forms
-  ========================================================================== */
-/**
-* 1. Change the font styles in all browsers.
-* 2. Remove the margin in Firefox and Safari.
-*/
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
-* Show the overflow in IE.
-* 1. Show the overflow in Edge.
-*/
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
-* Remove the inheritance of text transform in Edge, Firefox, and IE.
-* 1. Remove the inheritance of text transform in Firefox.
-*/
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
-* Correct the inability to style clickable types in iOS and Safari.
-*/
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
-* Remove the inner border and padding in Firefox.
-*/
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-* Restore the focus styles unset by the previous rule.
-*/
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
-* Correct the padding in Firefox.
-*/
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
-* 1. Correct the text wrapping in Edge and IE.
-* 2. Correct the color inheritance from `fieldset` elements in IE.
-* 3. Remove the padding so developers are not caught out when they zero out
-*    `fieldset` elements in all browsers.
-*/
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
-* Add the correct vertical alignment in Chrome, Firefox, and Opera.
-*/
-progress {
-  vertical-align: baseline;
-}
-
-/**
-* Remove the default vertical scrollbar in IE 10+.
-*/
-textarea {
-  overflow: auto;
-}
-
-/**
-* 1. Add the correct box sizing in IE 10.
-* 2. Remove the padding in IE 10.
-*/
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
-* Correct the cursor style of increment and decrement buttons in Chrome.
-*/
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
-* 1. Correct the odd appearance in Chrome and Safari.
-* 2. Correct the outline style in Safari.
-*/
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
-* Remove the inner padding in Chrome and Safari on macOS.
-*/
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-* 1. Correct the inability to style clickable types in iOS and Safari.
-* 2. Change font properties to `inherit` in Safari.
-*/
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
- ========================================================================== */
-/*
-* Add the correct display in Edge, IE 10+, and Firefox.
-*/
-details {
-  display: block;
-}
-
-/*
-* Add the correct display in all browsers.
-*/
-summary {
-  display: list-item;
-}
-
-/* Misc
- ========================================================================== */
-/**
-* Add the correct display in IE 10+.
-*/
-template {
-  display: none;
-}
-
-/**
-* Add the correct display in IE 10.
-*/
-[hidden] {
-  display: none;
-}
-
-/* Sections */
 .button {
   width: 18px;
   height: 18px;
   cursor: pointer;
   display: inline-block;
   position: relative;
-  left: 20px;
-  top: 12px;
+  left: 38px;
+  top: 8px;
 }
 
 .button .hamb-menu {
@@ -452,7 +121,6 @@ template {
   width: 190px;
   height: 100vh;
   background-color: #191919;
-  z-index: 2;
   /* ManagerList */
 }
 
@@ -465,12 +133,12 @@ template {
   /* Menu */
 }
 
-.sidebar .container-sidebar .logo-image {
+.sidebar .container-sidebar .text {
   width: 50%;
   padding-left: 16px;
 }
 
-.sidebar .container-sidebar .logo-image img {
+.sidebar .container-sidebar .text img {
   float: left;
 }
 
@@ -533,42 +201,32 @@ template {
 
 .sidebar .under-menu {
   color: white;
-  text-align: left;
-}
-
-.sidebar .under-menu a {
-  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  margin-left: 11%;
 }
 
 .sidebar .under-menu p {
-  font-size: 15px;
-  margin: 20px;
+  margin: 10px 0;
+}
+
+.sidebar .under-menu .name-manager {
+  font-size: 14px;
+  color: #56819f;
 }
 
 .sidebar .under-menu .list-managers {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-
-.sidebar .under-menu .list-managers .name-manager {
-  display: block;
-  font-size: 15px;
-  color: white;
-  margin: 13px 0 0 0;
+  width: 100%;
+  margin: 11px 0 0 19%;
+  display: inline-block;
 }
 
 .sidebar .under-menu .list-managers img {
-  height: 40px;
-  width: 40px;
-  margin: 4px 0 4px 20px;
-  margin-right: 20px;
+  filter: invert(85%);
+  height: 20px;
+  margin-right: 10px;
   display: inline-block;
-  border-radius: 45%;
-}
-
-.sidebar .under-menu .list-managers:hover {
-  background: #3b3a3a;
 }
 
 .sidebar .hidden {
@@ -580,245 +238,105 @@ template {
   width: 100%;
   margin: 0;
   padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  background: white;
-  color: #756969;
-  position: fixed;
-  z-index: 1;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  display: -ms-grid;
+  display: grid;
+  background: #999999;
+  color: #c6c6c6;
+  font-weight: bold;
+  -ms-grid-columns: 56% 15fr 4fr 13fr 5fr;
+      grid-template-columns: 56% 15fr 4fr 13fr 5fr;
+  grid-template-areas: "blank cash notification profile logout";
 }
 
 .blank-col {
+  content: '';
   height: 60px;
-  width: 70%;
   background-color: white;
-  cursor: pointer;
+  grid-area: blank;
 }
 
 .cash {
   height: 60px;
-  width: 190px;
   background-color: white;
-  margin: 0 1px 0 1px;
-  cursor: pointer;
-  position: relative;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
+  float: left;
+  grid-area: cash;
+  margin: 0 1px;
 }
 
 .cash img {
-  padding: 20px 0 0 22px;
-  height: 40px;
-  position: absolute;
+  padding: 19px 1% 0 10%;
+  height: 18px;
+  float: left;
 }
 
 .cash .wallet-value {
-  margin: 18px 0 0 50px;
-  font-size: 19px;
+  margin: 18px 10px 0 16px;
+  font-size: 18px;
+  float: left;
   color: #9c9c9c;
-  position: absolute;
 }
 
 .cash .image-menu-wallet {
-  margin: 8px 0 0 125px;
-  height: 30px;
-  position: absolute;
+  height: 8px;
+  padding: 28px 0 0 12px;
 }
 
 .notification {
   height: 60px;
-  width: 60px;
   background-color: white;
-  cursor: pointer;
+  float: left;
+  grid-area: notification;
 }
 
 .notification img {
-  height: 20px;
-  margin-top: 20px;
-  margin-left: 18px;
-  position: relative;
-}
-
-.notification .availability-icon {
-  width: 8px;
-  background-color: orange;
-  height: 8px;
-  border-radius: 45%;
-  position: absolute;
-  margin-top: -25px;
-  margin-left: 27px;
-}
-
-.profile {
-  height: 60px;
-  width: 200px;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
-  background-color: white;
-  cursor: pointer;
-  position: relative;
-}
-
-.profile img {
-  margin: 19px 0 0 10px;
-  height: 21px;
-  float: left;
-  position: absolute;
-}
-
-.profile .user-name {
-  margin: 19px 0 0 35px;
-  font-size: 16px;
-  float: left;
-  color: #56819f;
-}
-
-.logout {
-  height: 60px;
-  width: 60px;
-  background-color: white;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  border-right: .5px solid black;
-  cursor: pointer;
-}
-
-.logout img {
-  height: 18px;
-  margin: 20px 0 0 20px;
-}
-
-.blank-col:hover, .cash:hover, .notification:hover, .profile:hover, .logout:hover {
-  background: #f5f5f2;
-}
-
-.top-bar {
-  height: 60px;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  background: white;
-  color: #756969;
-  position: fixed;
-  z-index: 1;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.blank-col {
-  height: 60px;
-  width: 70%;
-  background-color: white;
-  cursor: pointer;
-}
-
-.cash {
-  height: 60px;
-  width: 190px;
-  background-color: white;
-  margin: 0 1px 0 1px;
-  cursor: pointer;
-  position: relative;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
-}
-
-.cash img {
-  padding: 20px 0 0 22px;
-  height: 40px;
-  position: absolute;
-}
-
-.cash .wallet-value {
-  margin: 18px 0 0 50px;
-  font-size: 19px;
-  color: #9c9c9c;
-  position: absolute;
-}
-
-.cash .image-menu-wallet {
-  margin: 8px 0 0 125px;
-  height: 30px;
-  position: absolute;
-}
-
-.notification {
-  height: 60px;
-  width: 60px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.notification img {
   height: 20px;
-  margin-top: 20px;
-  margin-left: 18px;
-  position: relative;
-}
-
-.notification .availability-icon {
-  width: 8px;
-  background-color: orange;
-  height: 8px;
-  border-radius: 45%;
-  position: absolute;
-  margin-top: -25px;
-  margin-left: 27px;
+  padding: 20px 0 0 0;
 }
 
 .profile {
   height: 60px;
-  width: 200px;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
   background-color: white;
-  cursor: pointer;
-  position: relative;
+  margin: 0 1px;
+  grid-area: profile;
 }
 
 .profile img {
-  margin: 19px 0 0 10px;
-  height: 21px;
+  height: 16px;
+  padding: 22px 0 0 7%;
   float: left;
-  position: absolute;
 }
 
 .profile .user-name {
-  margin: 19px 0 0 35px;
-  font-size: 16px;
+  margin: 22px 0 0 5%;
+  font-size: 13px;
   float: left;
   color: #56819f;
 }
 
 .logout {
-  height: 60px;
-  width: 60px;
+  float: left;
   background-color: white;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  border-right: .5px solid black;
-  cursor: pointer;
+  grid-area: logout;
+  margin: 0;
 }
 
 .logout img {
-  height: 18px;
-  margin: 20px 0 0 20px;
+  height: 14px;
+  padding: 22px 0 0 20px;
 }
 
-.blank-col:hover, .cash:hover, .notification:hover, .profile:hover, .logout:hover {
+.cash:hover, .notification:hover, .profile:hover, .logout:hover {
   background: #f5f5f2;
 }
 
 .content {
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   font-family: "Open Sans", Helvetica, Arial;
+  color: #c6c6c6;
   height: 90vh;
-  width: 97%;
+  width: 96.8%;
   margin: 30px 2% 0 1.4%;
   grid-gap: 1fr;
 }
@@ -842,54 +360,40 @@ template {
 }
 
 .general-statistic .title-general-statistic p {
+  margin-top: 0;
+  left: 10px;
   padding-left: 20px;
 }
 
 .date {
   width: 100%;
-  height: 140px;
+  height: 108px;
   background-color: white;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding: 20px 0;
-}
-
-.date .refresh-button {
-  background-color: orange;
-  height: 30px;
-  width: 30px;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 5px;
-}
-
-.date .refresh-button img {
-  height: 15px;
-  width: 15px;
-  margin: 7px 0 0 7px;
-  filter: invert(100%);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .date .date-picker {
-  height: 80px;
+  width: 31%;
+  height: 42px;
+  margin: 0;
+  padding: 32px 0 0 32.8%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .date .date-picker .border-pickers {
-  width: 350px;
+  width: 100%;
   height: 39px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: none;
+  border: 1px #f5f5f2 solid;
 }
 
 .date .date-picker .border-pickers:hover {
@@ -897,49 +401,64 @@ template {
 }
 
 .date .date-picker .border-pickers .first-input, .date .date-picker .border-pickers .second-input {
-  width: 140px;
+  width: 42%;
   height: 38px;
   border: none;
+  margin-right: 3.5%;
 }
 
 .date .date-picker .border-pickers .first-input input, .date .date-picker .border-pickers .second-input input {
   height: 100%;
+  width: 100%;
   border: none;
-  cursor: pointer;
 }
 
-.date .date-picker .border-pickers .first-input input:hover, .date .date-picker .border-pickers .second-input input:hover {
-  background-color: lightblue;
+.date .date-picker .border-pickers .icon-calendar {
+  width: 4%;
+  height: 12px;
+  margin-top: 8px;
 }
 
 .date .date-picker .border-pickers .line {
   content: none;
-  width: 1px;
+  width: 0.7%;
   height: 30px;
   border-left: 1px solid lightgray;
   margin: 4px 0.6%;
 }
 
+.date .refresh-button {
+  background-color: orange;
+  height: 40px;
+  width: 40px;
+  margin: 31px 0 0 1.2%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.date .refresh-button img {
+  height: 20px;
+  width: 20px;
+  margin: 10px 0 0 10px;
+  filter: invert(100%);
+}
+
 .chart {
   margin-top: 1px;
-  margin-bottom: 1px;
   width: 100%;
   height: 640px;
   background-color: white;
   display: inline-block;
-  margin: auto;
 }
 
 .chart .table {
   width: 82%;
-  margin: auto;
-  padding-top: 20px;
+  padding-left: 18%;
+  padding-top: 40px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
 .chart .table .name-cell {
@@ -952,14 +471,11 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
 }
 
 .chart .table .name-cell span {
   width: 50%;
   text-align: left;
-  color: #282828;
 }
 
 .chart .table .name-cell .value-cell {
@@ -969,32 +485,40 @@ template {
 }
 
 .chart .title-charts {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 21%;
   width: 30%;
   height: 30px;
-  font-size: 20px;
+  margin: 40px 0 0 17.7%;
 }
 
 .chart .chart-images {
-  margin: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 20px;
+  margin: 28px 0 0 18%;
 }
 
 .link-row {
-  height: 600px;
   grid-area: links;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .link-row .links-title {
   width: 100%;
   height: 50px;
+}
+
+.link-row .links-title p {
+  transform: translateY(-40%);
+  padding-left: 20px;
+}
+
+.link-row .links {
+  width: 100%;
+}
+
+.link-row {
+  height: 600px;
+}
+
+.link-row .links-title {
+  width: 100%;
   margin-top: 0;
   display: inline-block;
   font-size: 16px;
@@ -1003,123 +527,104 @@ template {
 
 .link-row .links-title p {
   padding-top: 14px;
-  transform: translateY(-40%);
-  padding-left: 20px;
 }
 
-.link-row .links {
+.links {
   background-color: white;
   width: 100%;
-  height: 750px;
-  padding: 20px 0;
-  position: relative;
+  height: 800px;
 }
 
-.link-row .links button {
-  width: 200px;
+.links button {
+  width: 11.9%;
   height: 40px;
+  margin: 20px 0 0 44%;
   border: none;
   border-radius: 4px;
   background-color: #f58220;
   cursor: pointer;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.link-row .links button:hover {
+.links button:hover {
   opacity: 80%;
 }
 
-.link-row .links .first-button, .link-row .links .second-button {
-  margin: auto;
+.links button p {
+  margin: 0;
+  padding: 2px 0 0 0;
   color: white;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  border: 20px;
+  font-size: 17px;
 }
 
-.link-row .links .second-button {
-  margin-bottom: 10px;
-}
-
-.link-row .links .links-list {
-  width: 100%;
-  height: 650px;
+.links .links-list {
+  width: 80%;
+  height: 250px;
   margin-top: 23px;
-  position: absolute;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
-.link-row .links .links-list li {
-  width: 95%;
+.links .links-list li {
+  width: 85%;
   height: 57px;
+  margin-left: 18%;
   border-top: 1px lightgray solid;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 3fr 1fr 1fr;
-      grid-template-columns: 2fr 3fr 1fr 1fr;
+  -ms-grid-columns: 2fr 3fr 1fr;
+      grid-template-columns: 2fr 3fr 1fr;
   grid-template-areas: "name-link link icon-link";
 }
 
-.link-row .links .links-list li .name-position {
+.links .links-list li .name-position {
   grid-area: name-link;
-  font-size: 14px;
-  padding: 16px 15px 0 15px;
+  padding: 16px 0 0 15px;
   color: #999999;
 }
 
-.link-row .links .links-list li .link-position {
+.links .links-list li .link-position {
   grid-area: link;
   padding: 17px 0 0 26%;
 }
 
-.link-row .links .links-list li .link-position a {
+.links .links-list li .link-position a {
   font-size: 14px;
   text-decoration: none;
   color: #999999;
   font-family: "Open Sans", Helvetica, Arial;
 }
 
-.link-row .links .links-list li .icon-position {
+.links .links-list li .icon-position {
   grid-area: icon-link;
-  width: 100%;
-  position: relative;
-  float: right;
+  width: 91px;
+  padding: 22px 0 0 17%;
 }
 
-.link-row .links .links-list li .icon-position img {
-  position: absolute;
-  height: 25px;
+.links .links-list li .icon-position img {
   visibility: hidden;
-  padding-top: 6px;
-  margin-top: 10px;
-  float: right;
+  width: 16px;
+  height: 16px;
+  float: left;
+  padding-left: 19px;
 }
 
-.link-row .links .links-list li .icon-position img:last-child {
-  padding-top: 5px;
-  margin-left: 70px;
-}
-
-.link-row .links .links-list li:hover {
+.links .links-list li:hover {
   background-color: #f5f5f2;
 }
 
-.link-row .links .links-list li:hover .icon-position img {
+.links .links-list li:hover .icon-position img {
   visibility: visible;
 }
 
-.link-row .links .links-list li:hover .orange-icon {
+.links .links-list li:hover .orange-icon {
   fill: #f58220;
 }
 
-.link-row .links .links-list li:last-child {
+.links .links-list .last-line {
   border-bottom: 1px lightgray solid;
+}
+
+.links .links-list .second-button {
+  width: 15%;
+  margin: 9px 0 0 53%;
 }
 
 @media (max-width: 1155px) {
@@ -1149,10 +654,10 @@ template {
   .content .chart .date .date-picker {
     padding-top: 32px;
   }
-  .links {
+  .content .chart .links {
     height: 850px;
   }
-  .links .first-button, .links .links-list .second-button {
+  .content .chart .links .first-button, .content .chart .links .links-list .second-button {
     width: 25%;
     margin: 5% 38%;
   }
@@ -1286,6 +791,16 @@ template {
     width: 55% !important;
     margin: 10% 35% !important;
   }
+  .close-menu {
+    visibility: hidden;
+    width: 40px;
+    background: none;
+  }
+  .vis-hamb {
+    visibility: visible;
+    position: absolute;
+    left: 6% !important;
+  }
   .content-max-width {
     -ms-grid-columns: 0fr 9fr;
         grid-template-columns: 0fr 9fr;
@@ -1340,7 +855,7 @@ template {
   .container .under-menu p {
     margin: 1px 8px 0 0;
   }
-  .container .under-menu .listMenagers {
+  .container .under-menu .list-managers {
     margin: 7px 0 0 0;
   }
   .container .top-bar {
@@ -1363,12 +878,24 @@ template {
   .container .top-bar .cash {
     height: 83px;
   }
+  .container .top-bar .cash img {
+    padding: 8px 0 0 44%;
+  }
   .container .top-bar .cash .wallet-value {
     margin: 5px 0 0 23%;
     font-size: 16px;
   }
   .container .top-bar .notification {
     height: 33px;
+  }
+  .container .top-bar .notification img {
+    padding: 0;
+  }
+  .container .top-bar .logout {
+    padding: 4px 30%;
+  }
+  .container .correct-top-bar {
+    top: 25%;
   }
   .content {
     margin-top: 0;
@@ -1440,183 +967,52 @@ template {
   }
 }
 
-@media (max-width: 320px) {
-  .container .sidebar .container-sidebar .burger-menu .logo-image {
-    height: 20px;
-    float: left;
-    margin-left: -20px;
+@media (max-width: 321px) {
+  .correct-top-bar {
+    top: 15%;
+  }
+  .container {
+    -ms-grid-columns: 2fr 2.7fr;
+        grid-template-columns: 2fr 2.7fr;
   }
   .container .sidebar .container-sidebar .list-menu {
     height: 200px;
-    margin-top: 20px;
   }
   .container .sidebar .container-sidebar .list-menu ul li {
     height: 22px;
-    margin: auto;
+    margin: 6px 0;
   }
-  .container .sidebar .container-sidebar .list-menu ul li img {
-    font-size: 22px;
+  .close-menu {
+    visibility: hidden;
+    width: 40px;
+    background: none;
   }
-  .container .sidebar .container-sidebar .list-menu ul li .link-title-sidemenu {
-    font-size: 10px;
-    padding-top: 5px;
+  .vis-hamb {
+    visibility: visible;
+    position: absolute;
+    left: 6% !important;
   }
-  .container .sidebar .container-sidebar .under-menu {
-    height: 50px;
+  .content-max-width {
+    -ms-grid-columns: 0fr 9fr;
+        grid-template-columns: 0fr 9fr;
   }
-  .container .sidebar .container-sidebar .under-menu p {
-    font-size: 14px;
-    margin: 10px 0 5px 8px;
+  .first-button {
+    width: 85% !important;
+    margin: 5% 5% !important;
   }
-  .container .sidebar .container-sidebar .under-menu .list-managers .name-manager {
-    font-size: 12px;
-    margin-top: 15px;
+  .second-button {
+    width: 85% !important;
+    margin: 10% 15% !important;
   }
-  /* Content */
-  .content {
-    display: -ms-flexbox;
-    display: flex;
+  .profile, .cash, .notification, .logout {
+    width: 135px;
   }
-  .general-statistic .title-general-statistic p {
-    font-size: 15px;
-    padding-top: 15px;
+  .logout {
+    padding: 0 !important;
   }
-  .general-statistic .date {
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
+  .logout img {
+    padding: 0;
+    padding-left: 61px;
   }
-  .general-statistic .date .date-picker {
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 20px;
-    margin-left: -15px;
-  }
-  .general-statistic .date .date-picker .border-pickers {
-    height: 20px;
-    -ms-flex-pack: left;
-        justify-content: left;
-  }
-  .general-statistic .date .date-picker .border-pickers .line {
-    border: 0;
-  }
-  .general-statistic .date .date-picker .border-pickers .first-input, .general-statistic .date .date-picker .border-pickers .second-input {
-    height: 10px;
-  }
-  .general-statistic .date .refresh-button {
-    height: 30px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  .general-statistic .chart p {
-    font-size: 15px;
-  }
-  .general-statistic .chart .table {
-    padding-top: 30px;
-    margin-left: 20px;
-    padding-right: 20px;
-    position: relative;
-  }
-  .general-statistic .chart .table .chart-images {
-    margin-top: -20px;
-    height: calc(80%);
-  }
-  .general-statistic .link-row .links-title p {
-    font-size: 16px;
-    margin-top: 15px;
-    padding-right: 280px;
-  }
-  .general-statistic .link-row .links .links-list ul {
-    float: left;
-    margin-left: -40px;
-  }
-  .general-statistic .link-row .links .links-list ul li {
-    padding-top: 0;
-  }
-  .general-statistic .link-row .links .links-list ul li .name-position {
-    font-size: 12px;
-  }
-  .general-statistic .link-row .links .links-list ul li .link-position {
-    margin-left: -45px;
-  }
-  .general-statistic .link-row .links .links-list ul li .icon-position img {
-    height: 20px;
-  }
-  .general-statistic .link-row .links .links-list ul li .icon-position img:last-of-type {
-    margin-left: 30px;
-  }
-  .general-statistic .link-row .links .second-button {
-    float: right;
-  }
-}
-
-/* Components */
-.button {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  left: 20px;
-  top: 12px;
-}
-
-.button .hamb-menu {
-  display: inline-block;
-  cursor: pointer;
-  background-color: transparent;
-  margin: 0;
-}
-
-.button .hamb-menu .hamb-box {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  position: relative;
-}
-
-.button .hamb-menu .hamb-box .box-line {
-  width: 100%;
-  height: 3px;
-  background-color: #999999;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: background-color .2s .3s ease-in-out;
-}
-
-.button .hamb-menu .hamb-box .box-line::before,
-.button .hamb-menu .hamb-box .box-line::after {
-  width: 100%;
-  height: 3px;
-  background-color: #999999;
-  position: absolute;
-  content: '';
-}
-
-.button .hamb-menu .hamb-box .box-line::before {
-  top: -6px;
-  left: 0;
-  transition: transform .2s .2s ease-in-out;
-}
-
-.button .hamb-menu .hamb-box .box-line::after {
-  top: 6px;
-  left: 0;
-  transition: transform .3s .3s ease-in-out;
-}
-
-.button .hamb-menu .hamb-box .box-line.active {
-  background-color: transparent;
-}
-
-.button .hamb-menu .hamb-box .box-line.active::before {
-  transform: translateY(6px) rotate(125deg);
-}
-
-.button .hamb-menu .hamb-box .box-line.active::after {
-  transform: translateY(-6px) rotate(-125deg);
 }
 /*# sourceMappingURL=style.css.map */

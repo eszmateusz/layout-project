@@ -1,0 +1,499 @@
+@media (max-width: 1155px) {
+
+  .top-bar {
+    grid-template-columns: 35% 8fr 2fr 8fr 2fr;
+    grid-template-areas:
+    "blank cash notification profile logout";
+  }
+
+  .content {
+    .chart {
+      height: 686px;
+
+      .table {
+        display: inline-block;
+
+        .name-cell {
+          width: 45%;
+          margin: 20px 14%;
+        }
+      }
+
+      p {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .chart-images img {
+        width: 80%;
+      }
+
+      .date {
+        .date-picker {
+          padding-top: 32px;
+        }
+      }
+
+      .links {
+        height: 850px;
+
+        .first-button, .links-list .second-button {
+          width: 25%;
+          margin: 5% 38%;
+        } 
+      }
+    }
+  }
+
+}
+
+@media (max-width: 920px) {
+
+  .container {
+    grid-template-columns: 188px 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "sidebar content"
+    "top-bar content"
+    "top-bar content";
+
+    .container-sidebar .list-menu {
+      height: 250px;
+
+      ul li {
+        height: 23px;
+      }
+    }
+    
+    .links {
+      height: 1380px;
+    
+      ul {
+        padding: 0;
+
+        li {
+          margin: 0;
+          padding: 4% 20% 4% 20%;
+          height: 70px;
+          display: block;
+          float: left;
+          text-align: center;
+
+          .name-position, .link-position, .icon-position {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            img {
+              padding: 0;
+              display: block;
+            }
+          }  
+
+          .icon-position {
+            margin: 3% 42%;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    padding: 0;
+    position: fixed;
+
+    .container-sidebar .list-menu ul li {
+      img {
+        margin: 5px 0 0 10px;
+      }
+
+      .link-title-sidemenu {
+        padding-top: 3px;
+      }
+    }
+  }
+
+  .top-bar {
+    position: fixed;
+    width: 190px;
+    margin: 0;
+    padding: 0;
+    border-top: 2px $dark-gray solid;
+    display: grid;
+    color: $dark-gray;
+    font-weight: bold;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "profile"
+    "cash"
+    "notification"
+    "logout";
+    top: 63%;
+  }
+
+  .correct-top-bar {
+    top: 15%;
+  }
+
+  .profile, .cash, .notification, .logout {
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    background-color: $paragraph-color;
+
+    img {
+      filter: invert(70%);
+    }
+  }
+
+  .logout {
+    padding: 18px 35%;
+
+    img {
+      padding-top: 0;
+    }
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  .correct-top-bar {
+    top: 15%;
+  }
+
+  .container {
+    grid-template-columns: 196px 1fr;
+  }
+
+  .content {
+    margin-top: 0;
+
+    .chart {
+      margin: 0;
+      height: 370px;
+
+      .table {
+        padding: 0;
+        width: 96%;
+        margin: 0 2%;
+
+        .name-cell {
+          margin: 0 2%;
+          width: 98%;
+
+          span {
+            width: 88%;
+          }
+      }
+
+      .value-cell {
+        width: 10%;
+
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .first-button {
+    width: 48% !important;
+    margin: 5% 27% !important;
+  }
+
+  .second-button {
+    width: 55% !important;
+    margin: 10% 35% !important;
+  }
+}
+
+.close-menu {
+  visibility: hidden;
+  width: 40px;
+  background: none;
+ }
+
+  .vis-hamb {
+    visibility: visible;
+    position: absolute;
+    left: 6% !important;
+  }
+
+  .content-max-width {
+    grid-template-columns: 0fr 9fr;
+  }
+
+  .date-picker {
+    width: 64% !important;
+    padding: 30px 0 0 10% !important;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .container {
+    position: absolute;
+    grid-template-columns: 140px 1fr;
+
+    .sidebar, .container-sidebar, .top-bar {
+      width: 135px;
+
+      .burger-menu {
+        display: inline-block;
+        width: 100%;
+
+        .text {
+          float: none;
+          width: 86%;
+          height: 30px;
+          padding: 10px 0 0 14%;
+        }
+
+        .button {
+          left: 46%;
+        }
+      }
+
+      .list-menu {
+        height: 240px;
+
+        ul {
+          margin-top: 6px;
+
+          li {
+            height: 25px;
+            margin: 5px 0;
+
+            a img {
+              padding-left: 2px;
+              margin: 6px 0 0 2px;
+              float: left;
+            }
+
+            span {
+              padding-left: 2px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .under-menu {
+      p {
+        margin: 1px 8px 0 0;
+      }
+
+      .list-managers {
+        margin: 7px 0 0 0;
+      }
+    }
+
+    .top-bar {
+      top: 64%;
+      height: 212px;
+
+      .blank-col {
+        display: none;
+      }
+
+      .profile {
+        height: 56px;
+
+        img {
+          margin: 0 40%;
+          padding: 7px 0 0 6%;
+        }
+
+        .user-name {
+          margin: 6px 0 2px 11%;
+        }
+      }
+
+      .cash {
+        height: 83px;
+
+        img {
+          padding: 8px 0 0 44%;
+        }
+
+        .wallet-value {
+          margin: 5px 0 0 23%;
+          font-size: 16px;
+        }
+      }
+
+      .notification {
+        height: 33px;
+
+        img {
+          padding: 0;
+        }
+      }
+
+      .logout {
+        padding: 4px 30%;
+      }
+    }
+
+    .correct-top-bar {
+      top: 25%;
+    }
+  }
+
+  .content {
+    margin-top: 0;
+
+    .date {
+      .date-picker {
+        width: 72%;
+        padding: 32px 0 0 3.8%;
+      }
+    }
+
+    .chart {
+      height: 330px;
+
+      .table {
+        width: 94%;
+        margin: 0;
+      }
+    }
+
+    .link-row {
+      margin-top: 5px;
+
+      .links-title {
+        height: 34px;
+
+        p {
+          padding: 0;
+          margin-top: 12px;
+          text-align: center;
+        }
+      }
+
+      .links {
+        width: 100%;
+        height: 1150px;
+
+        .first-button {
+          width: 53% !important;
+          margin: 5% 24% !important;
+        }
+
+        .second-button {
+          width: 65% !important;
+          margin: 10% 25% !important;
+        }
+      }
+
+      ul li {
+        padding: 4% 12.5%;
+        width: 100%;
+
+        .link-position {
+          display: inline-block;
+
+          a {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+    
+  .close-menu {
+    visibility: hidden;
+    width: 40px;
+    background: none;
+  }
+
+  .vis-hamb {
+    visibility: visible;
+    position: absolute;
+    left: 6% !important;
+  }
+
+  .content-max-width {
+    grid-template-columns: 0fr 9fr;
+  }
+
+  .logout {
+    padding: 0;
+
+    img {
+      padding: 0;
+      padding-left: 21px;
+    }
+  }
+
+}
+
+@media (max-width: 321px) {
+
+  .correct-top-bar {
+    top: 15%;
+  }
+
+  .container {
+    grid-template-columns: 2fr 2.7fr;
+
+    .sidebar {
+      .container-sidebar {
+        .list-menu {
+          height: 200px;
+
+          ul li {
+            height: 22px;
+            margin: 6px 0;
+          }
+        }
+      }
+    }
+  }
+    
+  .close-menu {
+    visibility: hidden;
+    width: 40px;
+    background: none;
+  }
+
+  .vis-hamb {
+    visibility: visible;
+    position: absolute;
+    left: 6% !important;
+  }
+
+  .content-max-width {
+    grid-template-columns: 0fr 9fr;
+  }
+
+  .first-button {
+    width: 85% !important;
+    margin: 5% 5% !important;
+  }
+
+  .second-button {
+    width: 85% !important;
+    margin: 10% 15% !important;
+  }
+
+  .profile, .cash, .notification, .logout {
+    width: 135px;
+  }
+
+  .logout {
+    padding: 0 !important;
+
+    img {
+      padding: 0;
+      padding-left: 61px;
+    }
+  }
+  
+}

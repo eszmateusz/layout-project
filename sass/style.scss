@@ -1,14 +1,9 @@
-/* Layout */
+//--layout--//
 @import 'variables';
 @import 'layout';
-@import 'normalize';
 
-/* Sections */
+//--sections--//
 @import 'mixins';
 @import 'sections/sidebar';
-@import 'sections/top-bar';
 @import 'sections/content';
-@import 'media'; 
-
-/* Components */
-@import 'components/burger-menu';
+@import 'media';

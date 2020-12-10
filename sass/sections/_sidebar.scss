@@ -1,12 +1,10 @@
 @import '../components/burger-menu';
 
 /* Global */
-
 .sidebar {
   width: 190px;
   height: 100vh;
   background-color: $paragraph-color;
-  z-index: 2;
 
   .container-sidebar {
     height: 100%;
@@ -15,7 +13,7 @@
     padding-top: 15px;
     background-color: $paragraph-color;
 
-    .logo-image {
+    .text {
       width: 50%;
       padding-left: 16px;
 
@@ -88,40 +86,31 @@
 
   .under-menu {
     color: white;
-    text-align: left;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 11%;
 
-    a {
-      text-decoration: none;
-    }
-    
     p {
-      font-size: 15px;
-      margin: 20px;
+      margin: 10px 0;
+    }
+
+    .name-manager {
+      font-size: 14px;
+      color: $link;
     }
 
     .list-managers {
-      display: flex;
-      margin: 0;
-
-      .name-manager {
-        display: block;
-        font-size: 15px;
-        color: white;
-        margin: 13px 0 0 0;
-      }
+      width: 100%;
+      margin: 11px 0 0 19%;
+      display: inline-block;
 
       img {
-        height: 40px;
-        width: 40px;
-        margin: 4px 0 4px 20px;
-        margin-right: 20px;
+        filter: invert(85%);
+        height: 20px;
+        margin-right: 10px;
         display: inline-block;
-        border-radius: 45%;
       }
-    }
-
-    .list-managers:hover {
-      background: #3b3a3a;
     }
   }
 

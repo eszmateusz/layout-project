@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   background-color: $light-gray;
@@ -18,6 +14,7 @@ body {
   grid-column-gap: 0.2%;
   grid-template-areas:
   "sidebar top-bar"
+  "sidebar content"
   "sidebar content";
 }
 
@@ -34,4 +31,17 @@ body {
 
 .content {
   grid-area: content;
+}
+
+.general-stat {
+  grid-area: general-stat;
+  border: 1px black solid;
+  margin-right: 10px;
+}
+
+.general-links {
+  grid-area: general-links;
+  border: 1px black solid;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
