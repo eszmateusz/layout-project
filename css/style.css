@@ -104,18 +104,6 @@ body {
   transition: transform .3s .3s ease-in-out;
 }
 
-.button .hamb-menu .hamb-box .box-line.active {
-  background-color: transparent;
-}
-
-.button .hamb-menu .hamb-box .box-line.active::before {
-  transform: translateY(6px) rotate(125deg);
-}
-
-.button .hamb-menu .hamb-box .box-line.active::after {
-  transform: translateY(-6px) rotate(-125deg);
-}
-
 /* Global */
 .sidebar {
   width: 190px;
@@ -130,6 +118,7 @@ body {
   position: fixed;
   padding-top: 15px;
   background-color: #191919;
+  z-index: 111;
   /* Menu */
 }
 
@@ -211,22 +200,29 @@ body {
   margin: 10px 0;
 }
 
-.sidebar .under-menu .name-manager {
-  font-size: 14px;
-  color: #56819f;
-}
-
 .sidebar .under-menu .list-managers {
   width: 100%;
-  margin: 11px 0 0 19%;
-  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
 }
 
 .sidebar .under-menu .list-managers img {
-  filter: invert(85%);
-  height: 20px;
-  margin-right: 10px;
-  display: inline-block;
+  height: 30px;
+  border-radius: 45%;
+  margin: 5px 10px 5px 5px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.sidebar .under-menu .list-managers .name-manager {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.sidebar .under-menu .list-managers:hover {
+  background: #3b3a3a;
 }
 
 .sidebar .hidden {
@@ -240,6 +236,7 @@ body {
   padding: 0;
   display: -ms-grid;
   display: grid;
+  position: fixed;
   background: #999999;
   color: #c6c6c6;
   font-weight: bold;
@@ -286,12 +283,24 @@ body {
   background-color: white;
   float: left;
   grid-area: notification;
+  position: relative;
 }
 
 .notification img {
   width: 100%;
   height: 20px;
   padding: 20px 0 0 0;
+}
+
+.notification .availability-icon {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 45%;
+  background-color: orange;
+  top: 30%;
+  bottom: 20%;
+  left: 52%;
 }
 
 .profile {
@@ -624,7 +633,16 @@ body {
 
 .links .links-list .second-button {
   width: 15%;
-  margin: 9px 0 0 53%;
+  margin: 9px 0 0 55%;
+}
+
+@media (max-width: 1440px) {
+  .top-bar {
+    position: fixed;
+  }
+  .container-sidebar {
+    z-index: 111;
+  }
 }
 
 @media (max-width: 1155px) {
@@ -632,6 +650,10 @@ body {
     -ms-grid-columns: 35% 8fr 2fr 8fr 2fr;
         grid-template-columns: 35% 8fr 2fr 8fr 2fr;
     grid-template-areas: "blank cash notification profile logout";
+    position: fixed;
+  }
+  .container-sidebar {
+    z-index: 111;
   }
   .content .chart {
     height: 686px;
@@ -657,9 +679,13 @@ body {
   .content .chart .links {
     height: 850px;
   }
-  .content .chart .links .first-button, .content .chart .links .links-list .second-button {
+  .content .chart .links .first-button {
     width: 25%;
     margin: 5% 38%;
+  }
+  .content .chart .links .first-button .links-list .second-button {
+    width: 25%;
+    margin: 10% 10% 10% 45%;
   }
 }
 
@@ -697,7 +723,7 @@ body {
     padding: 0;
   }
   .container .links ul li .name-position img, .container .links ul li .link-position img, .container .links ul li .icon-position img {
-    padding: 0;
+    padding: 0 2px;
     display: block;
   }
   .container .links ul li .icon-position {
@@ -743,7 +769,7 @@ body {
     filter: invert(70%);
   }
   .logout {
-    padding: 18px 35%;
+    padding: 10px 35%;
   }
   .logout img {
     padding-top: 0;
@@ -784,12 +810,12 @@ body {
     width: 100%;
   }
   .content .first-button {
-    width: 48% !important;
+    width: 47% !important;
     margin: 5% 27% !important;
   }
   .content .second-button {
     width: 55% !important;
-    margin: 10% 35% !important;
+    margin: 10% 0 10% 37% !important;
   }
   .close-menu {
     visibility: hidden;
@@ -891,6 +917,9 @@ body {
   .container .top-bar .notification img {
     padding: 0;
   }
+  .container .top-bar .notification .availability-icon {
+    top: 0;
+  }
   .container .top-bar .logout {
     padding: 4px 30%;
   }
@@ -927,12 +956,12 @@ body {
     height: 1150px;
   }
   .content .link-row .links .first-button {
-    width: 53% !important;
+    width: 55% !important;
     margin: 5% 24% !important;
   }
   .content .link-row .links .second-button {
     width: 65% !important;
-    margin: 10% 25% !important;
+    margin: 10% 0 10% 30% !important;
   }
   .content .link-row ul li {
     padding: 4% 12.5%;
@@ -997,12 +1026,12 @@ body {
         grid-template-columns: 0fr 9fr;
   }
   .first-button {
-    width: 85% !important;
+    width: 75% !important;
     margin: 5% 5% !important;
   }
   .second-button {
     width: 85% !important;
-    margin: 10% 15% !important;
+    margin: 10% 0 10% 20% !important;
   }
   .profile, .cash, .notification, .logout {
     width: 135px;
@@ -1013,6 +1042,13 @@ body {
   .logout img {
     padding: 0;
     padding-left: 61px;
+    margin-top: 10px;
+  }
+  .notification .availability-icon {
+    margin-top: 4px;
+  }
+  .notification img {
+    margin-top: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,54 +8,42 @@
   top: 8px;
 
   .hamb-menu {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0;
+
+    .hamb-box {
+      width: 18px;
+      height: 18px;
       display: inline-block;
-      cursor: pointer;
-      background-color: transparent;
-      margin: 0;
-
-      .hamb-box {
-          width: 18px;
-          height: 18px;
-          display: inline-block;
-          position: relative; 
+      position: relative; 
           
-          .box-line {
-              @include box-line;
-              left: 0;
-              top: 50%;
-              transform: translateY(-50%);
-              transition: background-color .2s .3s ease-in-out;
-          }
-
-          .box-line::before,
-          .box-line::after {
-              @include box-line;
-              content: '';  
-          }
-
-          .box-line::before {
-              top: -6px;
-              left: 0;
-              transition: transform .2s .2s ease-in-out;
-          } 
-
-          .box-line::after {
-              top: 6px;
-              left: 0;
-              transition: transform .3s .3s ease-in-out;
-          }  
-          
-          .box-line.active {
-              background-color: transparent;
-          }
-
-          .box-line.active::before {
-              transform: translateY(6px) rotate(125deg);
-          }
-            
-          .box-line.active::after {
-              transform: translateY(-6px) rotate(-125deg);
-          }
+      .box-line {
+        @include box-line;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color .2s .3s ease-in-out;
       }
+
+      .box-line::before,
+      .box-line::after {
+        @include box-line;
+        content: '';  
+      }
+
+      .box-line::before {
+        top: -6px;
+        left: 0;
+        transition: transform .2s .2s ease-in-out;
+      } 
+
+      .box-line::after {
+        top: 6px;
+        left: 0;
+        transition: transform .3s .3s ease-in-out;
+      }  
+    }
   } 
 }

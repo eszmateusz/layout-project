@@ -12,6 +12,7 @@
     position: fixed;
     padding-top: 15px;
     background-color: $paragraph-color;
+    z-index: 111;
 
     .text {
       width: 50%;
@@ -95,22 +96,27 @@
       margin: 10px 0;
     }
 
-    .name-manager {
-      font-size: 14px;
-      color: $link;
-    }
-
     .list-managers {
       width: 100%;
-      margin: 11px 0 0 19%;
-      display: inline-block;
+      display: flex;
+      cursor: pointer;
 
       img {
-        filter: invert(85%);
-        height: 20px;
-        margin-right: 10px;
-        display: inline-block;
+        height: 30px;
+        border-radius: 45%;
+        margin: 5px 10px 5px 5px;
+        align-items: center;
       }
+
+      .name-manager {
+        color: white;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+
+    .list-managers:hover {
+      background: #3b3a3a;
     }
   }
 

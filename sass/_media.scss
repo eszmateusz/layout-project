@@ -1,9 +1,24 @@
+@media (max-width: 1440px) {
+  .top-bar {
+    position: fixed;
+  }
+
+  .container-sidebar {
+    z-index: 111;
+  }
+}
+
 @media (max-width: 1155px) {
 
   .top-bar {
     grid-template-columns: 35% 8fr 2fr 8fr 2fr;
     grid-template-areas:
     "blank cash notification profile logout";
+    position: fixed;
+  }
+
+  .container-sidebar {
+    z-index: 111;
   }
 
   .content {
@@ -38,9 +53,14 @@
       .links {
         height: 850px;
 
-        .first-button, .links-list .second-button {
+        .first-button {
           width: 25%;
           margin: 5% 38%;
+
+          .links-list .second-button {
+            width: 25%;
+            margin: 10%10% 10% 45%;
+          }
         } 
       }
     }
@@ -86,7 +106,7 @@
             padding: 0;
 
             img {
-              padding: 0;
+              padding: 0 2px;
               display: block;
             }
           }  
@@ -149,7 +169,7 @@
   }
 
   .logout {
-    padding: 18px 35%;
+    padding: 10px 35%;
 
     img {
       padding-top: 0;
@@ -200,13 +220,13 @@
   }
 
   .first-button {
-    width: 48% !important;
+    width: 47% !important;
     margin: 5% 27% !important;
   }
 
   .second-button {
     width: 55% !important;
-    margin: 10% 35% !important;
+    margin: 10% 0 10% 37% !important;
   }
 }
 
@@ -333,6 +353,10 @@
         img {
           padding: 0;
         }
+
+        .availability-icon {
+          top: 0;
+        }
       }
 
       .logout {
@@ -382,13 +406,13 @@
         height: 1150px;
 
         .first-button {
-          width: 53% !important;
+          width: 55% !important;
           margin: 5% 24% !important;
         }
 
         .second-button {
           width: 65% !important;
-          margin: 10% 25% !important;
+          margin: 10% 0 10% 30% !important;
         }
       }
 
@@ -431,7 +455,6 @@
       padding-left: 21px;
     }
   }
-
 }
 
 @media (max-width: 321px) {
@@ -474,13 +497,13 @@
   }
 
   .first-button {
-    width: 85% !important;
+    width: 75% !important;
     margin: 5% 5% !important;
   }
 
   .second-button {
     width: 85% !important;
-    margin: 10% 15% !important;
+    margin: 10% 0 10% 20% !important;
   }
 
   .profile, .cash, .notification, .logout {
@@ -493,7 +516,17 @@
     img {
       padding: 0;
       padding-left: 61px;
+      margin-top: 10px;
     }
   }
-  
+
+  .notification {
+    .availability-icon {
+      margin-top: 4px;
+    }
+
+    img {
+      margin-top: 6px;
+    }
+  }
 }

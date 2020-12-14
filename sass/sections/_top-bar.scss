@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   display: grid;
+  position: fixed;
   background: $dark-gray;
   color: $text;
   font-weight: bold;
@@ -50,11 +51,23 @@
   background-color: white;
   float: left;
   grid-area: notification;
+  position: relative;
 
   img {
     width: 100%;
     height: 20px;
     padding: 20px 0 0 0;
+  }
+
+  .availability-icon {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 45%;
+    background-color: orange;
+    top: 30%;
+    bottom: 20%;
+    left: 52%;
   }
 }
 
